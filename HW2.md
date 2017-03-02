@@ -32,7 +32,7 @@
     Split the reads into 'left' and 'right' reads:
 
           gunzip -c ecoli_ref-5m.fastq.gz | \
-        split-paired-reads.py -1 top.R1.fq -2 top.R2.fq
+          split-paired-reads.py -1 top.R1.fq -2 top.R2.fq
 
 4. Run Trimmomatic on the split reads:
 
@@ -83,7 +83,7 @@
 
 3. Look at the report in `~/work/ecoli_report_trimmed/report.txt`:
 
-output:
+    output:
 ```
 All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
 
@@ -110,8 +110,7 @@ L50                         15
 L75                         30                    
 # N's per 100 kbp           0.00 
 ```
-
-previous report (untrimmed reads):
+    previous report (untrimmed reads):
 ```
 All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
 
