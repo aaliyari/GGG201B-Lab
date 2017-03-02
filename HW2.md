@@ -20,13 +20,34 @@
 2. Download the TruSeq3-PE adapters:
 
         wget https://anonscm.debian.org/cgit/debian-med/trimmomatic.git/plain/adapters/TruSeq3-PE.fa
-    
-3. Run Trimmomatic on your split reads, replacing the filenames in
-   `<xyz>` with the appropriate inputs and outputs.
+            
+3. Read manipulation
 
-        TrimmomaticPE <r1 input read file> <r2 input read file> \
-            <out-r1> <orphan1> out-r2> <orphan2> \
+Install khmer:
+
+    pip install khmer==2.0
+
+Split the reads into 'left' and 'right' reads:
+
+    gunzip -c ecoli_ref-5m.fastq.gz | \
+        split-paired-reads.py -1 top.R1.fq -2 top.R2.fq
+
+You can interleave them again by doing:
+
+    interleave-reads.py top.R1.fq top.R2.fq > top-pe.fq
+
+4. Run Trimmomatic on the split reads:
+
+        TrimmomaticPE top.R1.fq top.R2.fq \
+            trimmed-R1.fq orphan1.fq trimmed-R2.fq orphan2.fq \
             ILLUMINACLIP:TruSeq3-PE.fa:2:40:15 \
             LEADING:2 TRAILING:2 \
             SLIDINGWINDOW:4:2 \
             MINLEN:25
+            
+Output:
+
+        Input Read Pairs: 2500000 Both Surviving: 2496191 (99.85%) Forward Only Surviving: 3322 (0.13%) Reverse Only Surviving: 461 (0.02%)
+        Dropped: 26 (0.00%)
+        TrimmomaticPE: Completed successfully
+        
