@@ -56,7 +56,7 @@ Output:
 
         interleave-reads.py trimmed-R1.fq trimmed-R2.fq > trimmed-pe.fq
     
- 2. Assemble the E. coli data set with MEGAHIT:
+2. Assemble the E. coli data set with MEGAHIT:
 
         ~/megahit/megahit --12 trimmed-pe.fq -o ecoli-trimmed
 
