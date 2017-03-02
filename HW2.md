@@ -84,56 +84,59 @@
 3. Look at the report in `~/work/ecoli_report_trimmed/report.txt`:
 
     output:
-```
-All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+    
+    ```
+    All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
 
-Assembly                    ecoli-assembly-trimmed
-# contigs (>= 0 bp)         117                   
-# contigs (>= 1000 bp)      93                    
-# contigs (>= 5000 bp)      69                    
-# contigs (>= 10000 bp)     64                    
-# contigs (>= 25000 bp)     52                    
-# contigs (>= 50000 bp)     32                    
-Total length (>= 0 bp)      4577284               
-Total length (>= 1000 bp)   4566196               
-Total length (>= 5000 bp)   4508252               
-Total length (>= 10000 bp)  4471041               
-Total length (>= 25000 bp)  4296074               
-Total length (>= 50000 bp)  3578894               
-# contigs                   102                   
-Largest contig              246618                
-Total length                4572412               
-GC (%)                      50.74                 
-N50                         105708                
-N75                         53842                 
-L50                         15                    
-L75                         30                    
-# N's per 100 kbp           0.00 
-```
+    Assembly                    ecoli-assembly-trimmed
+    # contigs (>= 0 bp)         117                   
+    # contigs (>= 1000 bp)      93                    
+    # contigs (>= 5000 bp)      69                    
+    # contigs (>= 10000 bp)     64                    
+    # contigs (>= 25000 bp)     52                    
+    # contigs (>= 50000 bp)     32                    
+    Total length (>= 0 bp)      4577284               
+    Total length (>= 1000 bp)   4566196               
+    Total length (>= 5000 bp)   4508252               
+    Total length (>= 10000 bp)  4471041               
+    Total length (>= 25000 bp)  4296074               
+    Total length (>= 50000 bp)  3578894               
+    # contigs                   102                   
+    Largest contig              246618                
+    Total length                4572412               
+    GC (%)                      50.74                 
+    N50                         105708                
+    N75                         53842                 
+    L50                         15                    
+    L75                         30                    
+    # N's per 100 kbp           0.00 
+    ```
+
     previous report (untrimmed reads):
-```
-All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
 
-Assembly                    ecoli-assembly
-# contigs (>= 0 bp)         117           
-# contigs (>= 1000 bp)      93            
-# contigs (>= 5000 bp)      69            
-# contigs (>= 10000 bp)     64            
-# contigs (>= 25000 bp)     52            
-# contigs (>= 50000 bp)     32            
-Total length (>= 0 bp)      4577284       
-Total length (>= 1000 bp)   4566196       
-Total length (>= 5000 bp)   4508252       
-Total length (>= 10000 bp)  4471041       
-Total length (>= 25000 bp)  4296074       
-Total length (>= 50000 bp)  3578894       
-# contigs                   102           
-Largest contig              246618        
-Total length                4572412       
-GC (%)                      50.74         
-N50                         105708        
-N75                         53842         
-L50                         15            
-L75                         30            
-# N's per 100 kbp           0.00  
-```
+    ```
+    All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+    Assembly                    ecoli-assembly
+    # contigs (>= 0 bp)         117           
+    # contigs (>= 1000 bp)      93            
+    # contigs (>= 5000 bp)      69            
+    # contigs (>= 10000 bp)     64            
+    # contigs (>= 25000 bp)     52            
+    # contigs (>= 50000 bp)     32            
+    Total length (>= 0 bp)      4577284       
+    Total length (>= 1000 bp)   4566196       
+    Total length (>= 5000 bp)   4508252       
+    Total length (>= 10000 bp)  4471041       
+    Total length (>= 25000 bp)  4296074       
+    Total length (>= 50000 bp)  3578894       
+    # contigs                   102           
+    Largest contig              246618        
+    Total length                4572412       
+    GC (%)                      50.74         
+    N50                         105708        
+    N75                         53842         
+    L50                         15            
+    L75                         30            
+    # N's per 100 kbp           0.00  
+    ```
