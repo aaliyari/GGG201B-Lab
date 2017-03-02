@@ -1,3 +1,5 @@
+# 201B - HW2
+
 ### Install the MEGAHIT assembler
 
     git clone https://github.com/voutcn/megahit.git
@@ -23,13 +25,13 @@
             
 3. Read manipulation
 
-Install khmer:
+    Install khmer:
 
-    pip install khmer==2.0
+        pip install khmer==2.0
 
-Split the reads into 'left' and 'right' reads:
+    Split the reads into 'left' and 'right' reads:
 
-    gunzip -c ecoli_ref-5m.fastq.gz | \
+          gunzip -c ecoli_ref-5m.fastq.gz | \
         split-paired-reads.py -1 top.R1.fq -2 top.R2.fq
 
 4. Run Trimmomatic on the split reads:
@@ -41,7 +43,7 @@ Split the reads into 'left' and 'right' reads:
             SLIDINGWINDOW:4:2 \
             MINLEN:25
             
-Output:
+    Output:
 
         Input Read Pairs: 2500000
         Both Surviving: 2496191 (99.85%)
