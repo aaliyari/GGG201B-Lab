@@ -140,3 +140,5 @@
     L75                         30            
     # N's per 100 kbp           0.00  
     ```
+    
+The results are identical! I ran the entire process again and only one of the numbers in QUAST's report changed. This means that the readset we used was clean to begin with and trimming did not have any noticeable effects. This is evident by looking at Trimmomatic's output; 99.85% of the input reads are outputted with their both strands survivng.
